@@ -87,42 +87,13 @@
             </objects>
             <point key="canvasLocation" x="1489.8550724637682" y="-635.49107142857144"/>
         </scene>
-        <!--Single Certificate View Controller-->
-        <scene sceneID="CEj-QB-8e3">
-            <objects>
-                <viewController storyboardIdentifier="SingleCertificate" useStoryboardIdentifierAsRestorationIdentifier="YES" id="byw-Y4-7jd" customClass="SingleCertificateViewController" customModule="QuickRestart" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Iti-sy-TDt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K2a-Fk-taB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="K2a-Fk-taB" firstAttribute="trailing" secondItem="m6i-FO-H3B" secondAttribute="trailing" id="8me-FS-BVe"/>
-                            <constraint firstItem="K2a-Fk-taB" firstAttribute="leading" secondItem="m6i-FO-H3B" secondAttribute="leading" id="SGZ-iK-3ZB"/>
-                            <constraint firstItem="K2a-Fk-taB" firstAttribute="top" secondItem="Iti-sy-TDt" secondAttribute="top" id="e4B-to-vBf"/>
-                            <constraint firstAttribute="bottom" secondItem="K2a-Fk-taB" secondAttribute="bottom" id="v8q-oG-Upa"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="m6i-FO-H3B"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="K2a-Fk-taB" id="RFt-iA-OGp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztf-oD-sOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2321.739130434783" y="-636.16071428571422"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CId-R5-PZu">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aU6-iv-3Q0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="I8N-I9-OQb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

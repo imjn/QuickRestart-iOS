@@ -6,16 +6,29 @@
 //  Copyright © 2019 Imagine Kawabe. All rights reserved.
 //
 
+import AloeStackView
 import UIKit
 
-class SingleCertificateViewController: UIViewController {
+public class SingleCertificateViewController: AloeStackViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
+    // MARK: Public
+
+    public override func viewDidLoad() {
         super.viewDidLoad()
+        setUpSelf()
+        setUpStackView()
+    }
 
-        // Do any additional setup after loading the view.
+    var certificate: Certificate!
+
+    // MARK: Private
+
+    private func setUpSelf() {
+        title = "AloeStackView Example"
+    }
+
+    private func setUpStackView() {
+        stackView.automaticallyHidesLastSeparator = true
     }
 
 }

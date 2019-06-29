@@ -33,4 +33,8 @@ extension CertificateListViewController: UITableViewDelegate, UITableViewDataSou
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CertificateCell", for: indexPath) as? CertificateTableViewCell else { return UITableViewCell() }
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(SingleCertificateViewController(), animated: true)
+    }
 }
