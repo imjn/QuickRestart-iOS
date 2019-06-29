@@ -24,7 +24,7 @@ public class SingleCertificateViewController: AloeStackViewController {
     // MARK: Private
 
     private func setUpSelf() {
-        title = "AloeStackView Example"
+        title = self.certificate.title
     }
 
     private func setUpStackView() {

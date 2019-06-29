@@ -18,7 +18,7 @@ class CertificateListViewController: UIViewController {
         }
     }
 
-    var certificates: [Certificate]?
+    var certificates: [Certificate] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,6 @@ class CertificateListViewController: UIViewController {
 
 extension CertificateListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let certificates = self.certificates else { return 0 }
         return certificates.count
     }
 
@@ -42,6 +41,8 @@ extension CertificateListViewController: UITableViewDelegate, UITableViewDataSou
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(SingleCertificateViewController(), animated: true)
+        let destination = SingleCertificateViewController()
+        destination.certificate = certificates[indexPath.row]
+        self.navigationController?.pushViewController(destination, animated: true)
     }
 }
