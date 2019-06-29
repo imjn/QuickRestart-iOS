@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110E7E2922C7B4FE00330875 /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E2822C7B4FE00330875 /* Certificate.swift */; };
 		11F4356922C7319A00A48461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356822C7319A00A48461 /* AppDelegate.swift */; };
 		11F4356B22C7319A00A48461 /* EearthQuakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */; };
 		11F4356E22C7319A00A48461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4356C22C7319A00A48461 /* Main.storyboard */; };
@@ -22,9 +23,11 @@
 		11F4358A22C7608B00A48461 /* CertificateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358922C7608B00A48461 /* CertificateListViewController.swift */; };
 		11F4358D22C76F4E00A48461 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4358C22C76F4E00A48461 /* SignIn.storyboard */; };
 		11F4358F22C78EA000A48461 /* SingleCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */; };
+		D7E1C858DC6C9A7051A460FE /* Pods_QuickRestart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9B8BE170BA5C6BE06B76AD /* Pods_QuickRestart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110E7E2822C7B4FE00330875 /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
 		11F4356522C7319A00A48461 /* QuickRestart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickRestart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F4356822C7319A00A48461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EearthQuakeListViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +45,9 @@
 		11F4358922C7608B00A48461 /* CertificateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateListViewController.swift; sourceTree = "<group>"; };
 		11F4358C22C76F4E00A48461 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCertificateViewController.swift; sourceTree = "<group>"; };
+		3282F576FD939D20AF12557E /* Pods-QuickRestart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickRestart.debug.xcconfig"; path = "Target Support Files/Pods-QuickRestart/Pods-QuickRestart.debug.xcconfig"; sourceTree = "<group>"; };
+		DB9B8BE170BA5C6BE06B76AD /* Pods_QuickRestart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickRestart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41B7D1EA377D24122283436 /* Pods-QuickRestart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickRestart.release.xcconfig"; path = "Target Support Files/Pods-QuickRestart/Pods-QuickRestart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E1C858DC6C9A7051A460FE /* Pods_QuickRestart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +67,8 @@
 			children = (
 				11F4356722C7319A00A48461 /* QuickRestart */,
 				11F4356622C7319A00A48461 /* Products */,
+				F4BEF513F695EE2841566987 /* Pods */,
+				9F3B03757048D593A2C291A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,12 +90,12 @@
 				11F4356C22C7319A00A48461 /* Main.storyboard */,
 				11F4358C22C76F4E00A48461 /* SignIn.storyboard */,
 				11F4358922C7608B00A48461 /* CertificateListViewController.swift */,
+				11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */,
 				11F4356F22C7319A00A48461 /* Assets.xcassets */,
 				11F4357122C7319A00A48461 /* LaunchScreen.storyboard */,
 				11F4357422C7319A00A48461 /* Info.plist */,
 				11F4357C22C7369400A48461 /* Models */,
 				11F4358B22C76F3300A48461 /* Cells */,
-				11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */,
 			);
 			path = QuickRestart;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				11F4357D22C736AE00A48461 /* Disaster.swift */,
+				110E7E2822C7B4FE00330875 /* Certificate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +120,23 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		9F3B03757048D593A2C291A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B8BE170BA5C6BE06B76AD /* Pods_QuickRestart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4BEF513F695EE2841566987 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3282F576FD939D20AF12557E /* Pods-QuickRestart.debug.xcconfig */,
+				F41B7D1EA377D24122283436 /* Pods-QuickRestart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11F4357722C7319A00A48461 /* Build configuration list for PBXNativeTarget "QuickRestart" */;
 			buildPhases = (
+				3535F7B0158D7B8BDA99AB3A /* [CP] Check Pods Manifest.lock */,
 				11F4356122C7319A00A48461 /* Sources */,
 				11F4356222C7319A00A48461 /* Frameworks */,
 				11F4356322C7319A00A48461 /* Resources */,
+				E70E46AB906BD9D9042B0703 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +209,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3535F7B0158D7B8BDA99AB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickRestart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E70E46AB906BD9D9042B0703 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11F4356122C7319A00A48461 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,6 +259,7 @@
 				11F4358022C73BAD00A48461 /* DisasterService.swift in Sources */,
 				11F4358A22C7608B00A48461 /* CertificateListViewController.swift in Sources */,
 				11F4356B22C7319A00A48461 /* EearthQuakeListViewController.swift in Sources */,
+				110E7E2922C7B4FE00330875 /* Certificate.swift in Sources */,
 				11F4358322C741E500A48461 /* DisasterTableViewCell.swift in Sources */,
 				11F4358F22C78EA000A48461 /* SingleCertificateViewController.swift in Sources */,
 				11F4356922C7319A00A48461 /* AppDelegate.swift in Sources */,
@@ -336,6 +408,7 @@
 		};
 		11F4357822C7319A00A48461 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3282F576FD939D20AF12557E /* Pods-QuickRestart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +427,7 @@
 		};
 		11F4357922C7319A00A48461 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41B7D1EA377D24122283436 /* Pods-QuickRestart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
