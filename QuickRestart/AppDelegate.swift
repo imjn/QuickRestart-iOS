@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        configureInitialRootViewController(for: window)
+
         return true
     }
 
@@ -41,6 +44,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+extension AppDelegate {
+    func configureInitialRootViewController(for window: UIWindow?) {
+
+        if UserDefaults.standard.string(forKey: "username") != nil {
+            let initialViewController = UIStoryboard.initialViewController(for: .Main)
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        } else {
+            let initialViewController = UIStoryboard.initialViewController(for: .SignIn)
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
+
+    }
+}
+
+extension UIStoryboard {
+
+    convenience init(type: SBType, bundle: Bundle? = nil) {
+        self.init(name: type.filename, bundle: bundle)
+    }
+
+    enum SBType: String {
+        case Main
+        case SignIn
+
+        var filename: String {
+            return rawValue
+        }
+    }
+
+    static func initialViewController(for type: SBType) -> UIViewController {
+        let storyboard = UIStoryboard(type: type)
+        guard let initialViewController = storyboard.instantiateInitialViewController() else {
+            fatalError("Couldn't instantiate initial view controller for \(type.filename) storyboard.")
+        }
+        return initialViewController
+    }
+
+    static func moveToAnotherStoryboard(for type: SBType, currentView: UIViewController) -> Void {
+        let initialViewController = self.initialViewController(for: type)
+        currentView.view.window?.rootViewController = initialViewController
+        currentView.view.window?.makeKeyAndVisible()
+    }
 }
 
