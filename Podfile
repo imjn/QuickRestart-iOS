@@ -8,6 +8,7 @@ def install_pods
     pod 'Firebase/Firestore'
     pod 'IQKeyboardManagerSwift'
     pod 'RealmSwift'
+    pod 'AlamofireImage'
     
     # Rx
     pod 'ReactorKit'
