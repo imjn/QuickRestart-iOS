@@ -1,24 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aU6-iv-3Q0">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Disaster News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EearthQuakeListViewController" customModule="QuickRestart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="adA-Ju-SKR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="adA-Ju-SKR" secondAttribute="bottom" id="1if-0k-FqU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="adA-Ju-SKR" secondAttribute="trailing" id="58y-Xu-Pau"/>
+                            <constraint firstItem="adA-Ju-SKR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XKq-Js-u4q"/>
+                            <constraint firstItem="adA-Ju-SKR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h7H-zV-3O9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Disaster News" id="6Ye-40-qzr"/>
+                    <connections>
+                        <outlet property="tableView" destination="adA-Ju-SKR" id="Fvh-9t-mwd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1490" y="946"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I3S-P0-khS">
+            <objects>
+                <viewController id="eiu-ZY-NyB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xy6-w6-xjs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oyU-K4-rKt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FG1-tq-j20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2322" y="946"/>
+        </scene>
+        <!--Certificates-->
+        <scene sceneID="O35-20-jTX">
+            <objects>
+                <viewController id="nxZ-74-tsF" customClass="CertificateListViewController" customModule="QuickRestart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4m9-6c-TfN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HHX-Ee-Ury">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HHX-Ee-Ury" firstAttribute="leading" secondItem="7qq-tP-GM2" secondAttribute="leading" id="3vj-hg-W6a"/>
+                            <constraint firstItem="HHX-Ee-Ury" firstAttribute="top" secondItem="4m9-6c-TfN" secondAttribute="top" id="BzE-RO-PdT"/>
+                            <constraint firstItem="HHX-Ee-Ury" firstAttribute="trailing" secondItem="7qq-tP-GM2" secondAttribute="trailing" id="cdp-u4-BWb"/>
+                            <constraint firstAttribute="bottom" secondItem="HHX-Ee-Ury" secondAttribute="bottom" id="ouR-gV-YZX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7qq-tP-GM2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Certificates" id="0Td-u8-PGW"/>
+                    <connections>
+                        <outlet property="tableView" destination="HHX-Ee-Ury" id="pDh-Km-XHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgD-Eo-Gek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489.8550724637682" y="-635.49107142857144"/>
+        </scene>
+        <!--Single Certificate View Controller-->
+        <scene sceneID="CEj-QB-8e3">
+            <objects>
+                <viewController storyboardIdentifier="SingleCertificate" useStoryboardIdentifierAsRestorationIdentifier="YES" id="byw-Y4-7jd" customClass="SingleCertificateViewController" customModule="QuickRestart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iti-sy-TDt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K2a-Fk-taB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K2a-Fk-taB" firstAttribute="trailing" secondItem="m6i-FO-H3B" secondAttribute="trailing" id="8me-FS-BVe"/>
+                            <constraint firstItem="K2a-Fk-taB" firstAttribute="leading" secondItem="m6i-FO-H3B" secondAttribute="leading" id="SGZ-iK-3ZB"/>
+                            <constraint firstItem="K2a-Fk-taB" firstAttribute="top" secondItem="Iti-sy-TDt" secondAttribute="top" id="e4B-to-vBf"/>
+                            <constraint firstAttribute="bottom" secondItem="K2a-Fk-taB" secondAttribute="bottom" id="v8q-oG-Upa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m6i-FO-H3B"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="K2a-Fk-taB" id="RFt-iA-OGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztf-oD-sOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321.739130434783" y="-636.16071428571422"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CId-R5-PZu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aU6-iv-3Q0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="I8N-I9-OQb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qYu-pI-jJe" kind="relationship" relationship="viewControllers" id="cQc-H4-hzh"/>
+                        <segue destination="ND8-iF-mE4" kind="relationship" relationship="viewControllers" id="f2K-hk-iFS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8FL-bR-XQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="119"/>
+        </scene>
+        <!--Eearthquakes-->
+        <scene sceneID="rcl-ob-RFe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qYu-pI-jJe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Eearthquakes" image="pulse" id="doC-Bv-q81"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="iUI-lw-aFa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                            <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                            <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Of-57-99z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdd-7a-pya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="946"/>
+        </scene>
+        <!--Certificates-->
+        <scene sceneID="RGn-cL-pfB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ND8-iF-mE4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Certificates" image="signature" id="igk-55-N7j"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="B2I-vk-SQc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                            <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                            <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nxZ-74-tsF" kind="relationship" relationship="rootViewController" id="p5P-m0-WyT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbH-km-AjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579.71014492753625" y="-635.49107142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pulse" width="30" height="30"/>
+        <image name="signature" width="30" height="30"/>
+    </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SingleCertificateViewController.swift
 //  QuickRestart
 //
 //  Created by Imagine Kawabe on 2019/06/29.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SingleCertificateViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-

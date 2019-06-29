@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		11F4356922C7319A00A48461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356822C7319A00A48461 /* AppDelegate.swift */; };
-		11F4356B22C7319A00A48461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356A22C7319A00A48461 /* ViewController.swift */; };
+		11F4356B22C7319A00A48461 /* EearthQuakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */; };
 		11F4356E22C7319A00A48461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4356C22C7319A00A48461 /* Main.storyboard */; };
 		11F4357022C7319A00A48461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F4356F22C7319A00A48461 /* Assets.xcassets */; };
 		11F4357322C7319A00A48461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4357122C7319A00A48461 /* LaunchScreen.storyboard */; };
+		11F4357B22C7368000A48461 /* heal.json in Resources */ = {isa = PBXBuildFile; fileRef = 11F4357A22C7368000A48461 /* heal.json */; };
+		11F4357E22C736AE00A48461 /* Disaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4357D22C736AE00A48461 /* Disaster.swift */; };
+		11F4358022C73BAD00A48461 /* DisasterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4357F22C73BAD00A48461 /* DisasterService.swift */; };
+		11F4358322C741E500A48461 /* DisasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358122C741E500A48461 /* DisasterTableViewCell.swift */; };
+		11F4358422C741E500A48461 /* DisasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F4358222C741E500A48461 /* DisasterTableViewCell.xib */; };
+		11F4358722C75ACB00A48461 /* CertificateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358522C75ACB00A48461 /* CertificateTableViewCell.swift */; };
+		11F4358822C75ACB00A48461 /* CertificateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F4358622C75ACB00A48461 /* CertificateTableViewCell.xib */; };
+		11F4358A22C7608B00A48461 /* CertificateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358922C7608B00A48461 /* CertificateListViewController.swift */; };
+		11F4358D22C76F4E00A48461 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4358C22C76F4E00A48461 /* SignIn.storyboard */; };
+		11F4358F22C78EA000A48461 /* SingleCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11F4356522C7319A00A48461 /* QuickRestart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickRestart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F4356822C7319A00A48461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11F4356A22C7319A00A48461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EearthQuakeListViewController.swift; sourceTree = "<group>"; };
 		11F4356D22C7319A00A48461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11F4356F22C7319A00A48461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F4357222C7319A00A48461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11F4357422C7319A00A48461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F4357A22C7368000A48461 /* heal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heal.json; sourceTree = "<group>"; };
+		11F4357D22C736AE00A48461 /* Disaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disaster.swift; sourceTree = "<group>"; };
+		11F4357F22C73BAD00A48461 /* DisasterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterService.swift; sourceTree = "<group>"; };
+		11F4358122C741E500A48461 /* DisasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterTableViewCell.swift; sourceTree = "<group>"; };
+		11F4358222C741E500A48461 /* DisasterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisasterTableViewCell.xib; sourceTree = "<group>"; };
+		11F4358522C75ACB00A48461 /* CertificateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateTableViewCell.swift; sourceTree = "<group>"; };
+		11F4358622C75ACB00A48461 /* CertificateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateTableViewCell.xib; sourceTree = "<group>"; };
+		11F4358922C7608B00A48461 /* CertificateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateListViewController.swift; sourceTree = "<group>"; };
+		11F4358C22C76F4E00A48461 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCertificateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,40 @@
 		11F4356722C7319A00A48461 /* QuickRestart */ = {
 			isa = PBXGroup;
 			children = (
+				11F4357A22C7368000A48461 /* heal.json */,
 				11F4356822C7319A00A48461 /* AppDelegate.swift */,
-				11F4356A22C7319A00A48461 /* ViewController.swift */,
+				11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */,
+				11F4357F22C73BAD00A48461 /* DisasterService.swift */,
 				11F4356C22C7319A00A48461 /* Main.storyboard */,
+				11F4358C22C76F4E00A48461 /* SignIn.storyboard */,
+				11F4358922C7608B00A48461 /* CertificateListViewController.swift */,
 				11F4356F22C7319A00A48461 /* Assets.xcassets */,
 				11F4357122C7319A00A48461 /* LaunchScreen.storyboard */,
 				11F4357422C7319A00A48461 /* Info.plist */,
+				11F4357C22C7369400A48461 /* Models */,
+				11F4358B22C76F3300A48461 /* Cells */,
+				11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */,
 			);
 			path = QuickRestart;
+			sourceTree = "<group>";
+		};
+		11F4357C22C7369400A48461 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11F4357D22C736AE00A48461 /* Disaster.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11F4358B22C76F3300A48461 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11F4358122C741E500A48461 /* DisasterTableViewCell.swift */,
+				11F4358222C741E500A48461 /* DisasterTableViewCell.xib */,
+				11F4358522C75ACB00A48461 /* CertificateTableViewCell.swift */,
+				11F4358622C75ACB00A48461 /* CertificateTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F4357322C7319A00A48461 /* LaunchScreen.storyboard in Resources */,
+				11F4358822C75ACB00A48461 /* CertificateTableViewCell.xib in Resources */,
+				11F4358422C741E500A48461 /* DisasterTableViewCell.xib in Resources */,
 				11F4357022C7319A00A48461 /* Assets.xcassets in Resources */,
 				11F4356E22C7319A00A48461 /* Main.storyboard in Resources */,
+				11F4358D22C76F4E00A48461 /* SignIn.storyboard in Resources */,
+				11F4357B22C7368000A48461 /* heal.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F4356B22C7319A00A48461 /* ViewController.swift in Sources */,
+				11F4358022C73BAD00A48461 /* DisasterService.swift in Sources */,
+				11F4358A22C7608B00A48461 /* CertificateListViewController.swift in Sources */,
+				11F4356B22C7319A00A48461 /* EearthQuakeListViewController.swift in Sources */,
+				11F4358322C741E500A48461 /* DisasterTableViewCell.swift in Sources */,
+				11F4358F22C78EA000A48461 /* SingleCertificateViewController.swift in Sources */,
 				11F4356922C7319A00A48461 /* AppDelegate.swift in Sources */,
+				11F4357E22C736AE00A48461 /* Disaster.swift in Sources */,
+				11F4358722C75ACB00A48461 /* CertificateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

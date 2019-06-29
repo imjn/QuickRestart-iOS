@@ -1,0 +1,33 @@
+use_frameworks!
+
+def install_pods
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Messaging'
+    pod 'Firebase/Firestore'
+    pod 'IQKeyboardManagerSwift'
+    pod 'RealmSwift'
+    
+    # Rx
+    pod 'ReactorKit'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxOptional'
+    pod 'RxViewController'
+    pod 'RxDataSources'
+    pod 'RxRealm'
+    
+    # Rx * Firebase
+    pod 'RxFirebase/Firestore'
+    pod 'RxFirebase/Storage'
+    pod 'RxFirebase/Auth'
+    
+    # UI
+    pod 'lottie-ios'
+    pod 'XLPagerTabStrip'
+end
+
+target 'poemy' do
+  install_pods
+end
