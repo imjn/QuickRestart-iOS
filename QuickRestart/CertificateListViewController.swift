@@ -18,15 +18,22 @@ class CertificateListViewController: UIViewController {
         }
     }
 
+    var certificates: [Certificate]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        CertificateService().fetchCertificates { cers in
+            self.certificates = cers
+        }
 
     }
 }
 
 extension CertificateListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        guard let certificates = self.certificates else { return 0 }
+        return certificates.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

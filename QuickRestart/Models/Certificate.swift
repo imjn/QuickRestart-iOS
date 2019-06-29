@@ -41,19 +41,20 @@ class Certificate {
     }
 
     init?(json: [String: Any]) {
+        let dict = json["certificate"] as! [String:Any]
         guard
-            let id = json["id"] as? String,
-            let title = json["title"] as? String,
-            let seriousnessStr = json["seriousness"] as? String,
+            let id = dict["id"] as? String,
+            let title = dict["title"] as? String,
+            let seriousnessStr = dict["seriousness"] as? String,
             let seriousness = Seriousness(rawValue: seriousnessStr),
-            let imageRefStr = json["imageRefStr"] as? String,
+            let imageRefStr = dict["imageRef"] as? String,
             let imageRef = URL(string: imageRefStr),
-            let categoryStr = json["category"] as? String,
+            let categoryStr = dict["category"] as? String,
             let category = Category(rawValue: categoryStr),
-            let dateStr = json["date"] as? String,
-            let date = dateStr.toDate(), // TODO: Convert string to date
-            let estimatedMoney = json["estimatedMoney"] as? String,
-            let postedImageRefsStr = json["postedImageRefs"] as? [String]
+            let dateStr = dict["date"] as? String,
+            let date = dateStr.toDate(),
+            let estimatedMoney = dict["estimatedMoney"] as? String,
+            let postedImageRefsStr = dict["postedImageRefs"] as? [String]
             else { return  nil }
 
         self.id = id
@@ -65,7 +66,7 @@ class Certificate {
         self.estimatedMoney = estimatedMoney
         self.postedImageRefs = postedImageRefsStr.compactMap({ URL(string: $0) })
     }
-    
+
 }
 
 extension String {
