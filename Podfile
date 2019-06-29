@@ -26,8 +26,9 @@ def install_pods
     # UI
     pod 'lottie-ios'
     pod 'XLPagerTabStrip'
+    pod 'AloeStackView'
 end
 
-target 'poemy' do
+target 'QuickRestart' do
   install_pods
 end
