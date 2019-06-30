@@ -12,8 +12,18 @@
 		110E7E2E22C7C13500330875 /* CertificateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E2D22C7C13500330875 /* CertificateService.swift */; };
 		110E7E3122C7D93600330875 /* TitleWithCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E3022C7D93600330875 /* TitleWithCheckView.swift */; };
 		110E7E3322C7E09800330875 /* StackTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E3222C7E09800330875 /* StackTextView.swift */; };
+		110E7E4822C7F9E800330875 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E4722C7F9E800330875 /* SignInViewController.swift */; };
+		110E7E4B22C816F500330875 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E4A22C816F500330875 /* LocationService.swift */; };
+		110E7E4F22C81D2700330875 /* Disaster.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E7E4E22C81D2700330875 /* Disaster.json */; };
+		110E7E5222C82FF600330875 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5122C82FF600330875 /* SectionModel.swift */; };
+		110E7E5522C8377B00330875 /* DisasterListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5422C8377B00330875 /* DisasterListViewReactor.swift */; };
+		110E7E5822C83C0900330875 /* UIScrollView+ReachedBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5722C83C0900330875 /* UIScrollView+ReachedBottom.swift */; };
+		110E7E5A22C83D7C00330875 /* IndexPath+CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5922C83D7C00330875 /* IndexPath+CacheKey.swift */; };
+		110E7E5C22C8468700330875 /* SingleDisasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5B22C8468700330875 /* SingleDisasterViewController.swift */; };
+		110E7E5F22C847C000330875 /* SingleDisasterTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5D22C847C000330875 /* SingleDisasterTopTableViewCell.swift */; };
+		110E7E6022C847C000330875 /* SingleDisasterTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110E7E5E22C847C000330875 /* SingleDisasterTopTableViewCell.xib */; };
 		11F4356922C7319A00A48461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356822C7319A00A48461 /* AppDelegate.swift */; };
-		11F4356B22C7319A00A48461 /* EearthQuakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */; };
+		11F4356B22C7319A00A48461 /* DisasterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356A22C7319A00A48461 /* DisasterListViewController.swift */; };
 		11F4356E22C7319A00A48461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4356C22C7319A00A48461 /* Main.storyboard */; };
 		11F4357022C7319A00A48461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F4356F22C7319A00A48461 /* Assets.xcassets */; };
 		11F4357322C7319A00A48461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4357122C7319A00A48461 /* LaunchScreen.storyboard */; };
@@ -27,7 +37,7 @@
 		11F4358A22C7608B00A48461 /* CertificateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358922C7608B00A48461 /* CertificateListViewController.swift */; };
 		11F4358D22C76F4E00A48461 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4358C22C76F4E00A48461 /* SignIn.storyboard */; };
 		11F4358F22C78EA000A48461 /* SingleCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */; };
-		D7E1C858DC6C9A7051A460FE /* Pods_QuickRestart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9B8BE170BA5C6BE06B76AD /* Pods_QuickRestart.framework */; };
+		D5DBDFD127C356C40485B75E /* Pods_QuickRestart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6ECF2E049622A9F39EC8DE /* Pods_QuickRestart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +46,19 @@
 		110E7E2D22C7C13500330875 /* CertificateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateService.swift; sourceTree = "<group>"; };
 		110E7E3022C7D93600330875 /* TitleWithCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithCheckView.swift; sourceTree = "<group>"; };
 		110E7E3222C7E09800330875 /* StackTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTextView.swift; sourceTree = "<group>"; };
+		110E7E4722C7F9E800330875 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		110E7E4A22C816F500330875 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		110E7E4E22C81D2700330875 /* Disaster.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Disaster.json; sourceTree = "<group>"; };
+		110E7E5122C82FF600330875 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		110E7E5422C8377B00330875 /* DisasterListViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterListViewReactor.swift; sourceTree = "<group>"; };
+		110E7E5722C83C0900330875 /* UIScrollView+ReachedBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ReachedBottom.swift"; sourceTree = "<group>"; };
+		110E7E5922C83D7C00330875 /* IndexPath+CacheKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+CacheKey.swift"; sourceTree = "<group>"; };
+		110E7E5B22C8468700330875 /* SingleDisasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDisasterViewController.swift; sourceTree = "<group>"; };
+		110E7E5D22C847C000330875 /* SingleDisasterTopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDisasterTopTableViewCell.swift; sourceTree = "<group>"; };
+		110E7E5E22C847C000330875 /* SingleDisasterTopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleDisasterTopTableViewCell.xib; sourceTree = "<group>"; };
 		11F4356522C7319A00A48461 /* QuickRestart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickRestart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F4356822C7319A00A48461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EearthQuakeListViewController.swift; sourceTree = "<group>"; };
+		11F4356A22C7319A00A48461 /* DisasterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterListViewController.swift; sourceTree = "<group>"; };
 		11F4356D22C7319A00A48461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11F4356F22C7319A00A48461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F4357222C7319A00A48461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,9 +73,9 @@
 		11F4358922C7608B00A48461 /* CertificateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateListViewController.swift; sourceTree = "<group>"; };
 		11F4358C22C76F4E00A48461 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCertificateViewController.swift; sourceTree = "<group>"; };
-		3282F576FD939D20AF12557E /* Pods-QuickRestart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickRestart.debug.xcconfig"; path = "Target Support Files/Pods-QuickRestart/Pods-QuickRestart.debug.xcconfig"; sourceTree = "<group>"; };
-		DB9B8BE170BA5C6BE06B76AD /* Pods_QuickRestart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickRestart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F41B7D1EA377D24122283436 /* Pods-QuickRestart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickRestart.release.xcconfig"; path = "Target Support Files/Pods-QuickRestart/Pods-QuickRestart.release.xcconfig"; sourceTree = "<group>"; };
+		3A32DFD6FC35E8440D3C515D /* Pods-QuickRestart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickRestart.debug.xcconfig"; path = "Target Support Files/Pods-QuickRestart/Pods-QuickRestart.debug.xcconfig"; sourceTree = "<group>"; };
+		8B6ECF2E049622A9F39EC8DE /* Pods_QuickRestart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickRestart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B958D60E90CD9F706A0FAE /* Pods-QuickRestart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickRestart.release.xcconfig"; path = "Target Support Files/Pods-QuickRestart/Pods-QuickRestart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E1C858DC6C9A7051A460FE /* Pods_QuickRestart.framework in Frameworks */,
+				D5DBDFD127C356C40485B75E /* Pods_QuickRestart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,17 +94,57 @@
 			isa = PBXGroup;
 			children = (
 				110E7E2B22C7BF1E00330875 /* Certificate.json */,
+				110E7E4E22C81D2700330875 /* Disaster.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		110E7E2F22C7D91900330875 /* Views */ = {
+		110E7E2F22C7D91900330875 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				110E7E3022C7D93600330875 /* TitleWithCheckView.swift */,
 				110E7E3222C7E09800330875 /* StackTextView.swift */,
 			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		110E7E4922C816DD00330875 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11F4357F22C73BAD00A48461 /* DisasterService.swift */,
+				110E7E2D22C7C13500330875 /* CertificateService.swift */,
+				110E7E4A22C816F500330875 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		110E7E5022C82BFE00330875 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11F4358922C7608B00A48461 /* CertificateListViewController.swift */,
+				11F4356A22C7319A00A48461 /* DisasterListViewController.swift */,
+				11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */,
+				110E7E4722C7F9E800330875 /* SignInViewController.swift */,
+				110E7E5B22C8468700330875 /* SingleDisasterViewController.swift */,
+			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		110E7E5322C8376900330875 /* Reactors */ = {
+			isa = PBXGroup;
+			children = (
+				110E7E5422C8377B00330875 /* DisasterListViewReactor.swift */,
+			);
+			path = Reactors;
+			sourceTree = "<group>";
+		};
+		110E7E5622C83BF900330875 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				110E7E5722C83C0900330875 /* UIScrollView+ReachedBottom.swift */,
+				110E7E5922C83D7C00330875 /* IndexPath+CacheKey.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		11F4355C22C7319A00A48461 = {
@@ -93,7 +153,7 @@
 				11F4356722C7319A00A48461 /* QuickRestart */,
 				11F4356622C7319A00A48461 /* Products */,
 				F4BEF513F695EE2841566987 /* Pods */,
-				9F3B03757048D593A2C291A7 /* Frameworks */,
+				E66501A4D08841DCC433D293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,22 +168,21 @@
 		11F4356722C7319A00A48461 /* QuickRestart */ = {
 			isa = PBXGroup;
 			children = (
+				110E7E5622C83BF900330875 /* Extensions */,
 				11F4357A22C7368000A48461 /* heal.json */,
 				11F4356822C7319A00A48461 /* AppDelegate.swift */,
-				11F4356A22C7319A00A48461 /* EearthQuakeListViewController.swift */,
-				11F4357F22C73BAD00A48461 /* DisasterService.swift */,
 				11F4356C22C7319A00A48461 /* Main.storyboard */,
 				11F4358C22C76F4E00A48461 /* SignIn.storyboard */,
-				11F4358922C7608B00A48461 /* CertificateListViewController.swift */,
-				11F4358E22C78EA000A48461 /* SingleCertificateViewController.swift */,
+				110E7E5022C82BFE00330875 /* Views */,
+				110E7E5322C8376900330875 /* Reactors */,
 				11F4356F22C7319A00A48461 /* Assets.xcassets */,
 				11F4357122C7319A00A48461 /* LaunchScreen.storyboard */,
 				11F4357422C7319A00A48461 /* Info.plist */,
 				11F4357C22C7369400A48461 /* Models */,
 				11F4358B22C76F3300A48461 /* Cells */,
-				110E7E2F22C7D91900330875 /* Views */,
+				110E7E2F22C7D91900330875 /* Components */,
 				110E7E2A22C7BEEB00330875 /* Mocks */,
-				110E7E2D22C7C13500330875 /* CertificateService.swift */,
+				110E7E4922C816DD00330875 /* Services */,
 			);
 			path = QuickRestart;
 			sourceTree = "<group>";
@@ -133,6 +192,7 @@
 			children = (
 				11F4357D22C736AE00A48461 /* Disaster.swift */,
 				110E7E2822C7B4FE00330875 /* Certificate.swift */,
+				110E7E5122C82FF600330875 /* SectionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,14 +204,16 @@
 				11F4358222C741E500A48461 /* DisasterTableViewCell.xib */,
 				11F4358522C75ACB00A48461 /* CertificateTableViewCell.swift */,
 				11F4358622C75ACB00A48461 /* CertificateTableViewCell.xib */,
+				110E7E5D22C847C000330875 /* SingleDisasterTopTableViewCell.swift */,
+				110E7E5E22C847C000330875 /* SingleDisasterTopTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		9F3B03757048D593A2C291A7 /* Frameworks */ = {
+		E66501A4D08841DCC433D293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB9B8BE170BA5C6BE06B76AD /* Pods_QuickRestart.framework */,
+				8B6ECF2E049622A9F39EC8DE /* Pods_QuickRestart.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,8 +221,8 @@
 		F4BEF513F695EE2841566987 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3282F576FD939D20AF12557E /* Pods-QuickRestart.debug.xcconfig */,
-				F41B7D1EA377D24122283436 /* Pods-QuickRestart.release.xcconfig */,
+				3A32DFD6FC35E8440D3C515D /* Pods-QuickRestart.debug.xcconfig */,
+				93B958D60E90CD9F706A0FAE /* Pods-QuickRestart.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -172,11 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11F4357722C7319A00A48461 /* Build configuration list for PBXNativeTarget "QuickRestart" */;
 			buildPhases = (
-				3535F7B0158D7B8BDA99AB3A /* [CP] Check Pods Manifest.lock */,
+				E43494DFC9871FA0A908EAB6 /* [CP] Check Pods Manifest.lock */,
 				11F4356122C7319A00A48461 /* Sources */,
 				11F4356222C7319A00A48461 /* Frameworks */,
 				11F4356322C7319A00A48461 /* Resources */,
-				E70E46AB906BD9D9042B0703 /* [CP] Embed Pods Frameworks */,
+				C75581C7576F780F04FBFE3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F4357322C7319A00A48461 /* LaunchScreen.storyboard in Resources */,
+				110E7E4F22C81D2700330875 /* Disaster.json in Resources */,
 				11F4358822C75ACB00A48461 /* CertificateTableViewCell.xib in Resources */,
 				11F4358422C741E500A48461 /* DisasterTableViewCell.xib in Resources */,
+				110E7E6022C847C000330875 /* SingleDisasterTopTableViewCell.xib in Resources */,
 				110E7E2C22C7BF1E00330875 /* Certificate.json in Resources */,
 				11F4357022C7319A00A48461 /* Assets.xcassets in Resources */,
 				11F4356E22C7319A00A48461 /* Main.storyboard in Resources */,
@@ -239,7 +303,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3535F7B0158D7B8BDA99AB3A /* [CP] Check Pods Manifest.lock */ = {
+		C75581C7576F780F04FBFE3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E43494DFC9871FA0A908EAB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,23 +342,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E70E46AB906BD9D9042B0703 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickRestart/Pods-QuickRestart-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -285,17 +349,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110E7E5A22C83D7C00330875 /* IndexPath+CacheKey.swift in Sources */,
+				110E7E5C22C8468700330875 /* SingleDisasterViewController.swift in Sources */,
+				110E7E5F22C847C000330875 /* SingleDisasterTopTableViewCell.swift in Sources */,
+				110E7E4B22C816F500330875 /* LocationService.swift in Sources */,
 				11F4358022C73BAD00A48461 /* DisasterService.swift in Sources */,
 				11F4358A22C7608B00A48461 /* CertificateListViewController.swift in Sources */,
-				11F4356B22C7319A00A48461 /* EearthQuakeListViewController.swift in Sources */,
+				11F4356B22C7319A00A48461 /* DisasterListViewController.swift in Sources */,
 				110E7E2922C7B4FE00330875 /* Certificate.swift in Sources */,
 				110E7E3322C7E09800330875 /* StackTextView.swift in Sources */,
+				110E7E4822C7F9E800330875 /* SignInViewController.swift in Sources */,
 				11F4358322C741E500A48461 /* DisasterTableViewCell.swift in Sources */,
+				110E7E5822C83C0900330875 /* UIScrollView+ReachedBottom.swift in Sources */,
+				110E7E5222C82FF600330875 /* SectionModel.swift in Sources */,
 				110E7E2E22C7C13500330875 /* CertificateService.swift in Sources */,
 				11F4358F22C78EA000A48461 /* SingleCertificateViewController.swift in Sources */,
 				11F4356922C7319A00A48461 /* AppDelegate.swift in Sources */,
 				11F4357E22C736AE00A48461 /* Disaster.swift in Sources */,
 				11F4358722C75ACB00A48461 /* CertificateTableViewCell.swift in Sources */,
+				110E7E5522C8377B00330875 /* DisasterListViewReactor.swift in Sources */,
 				110E7E3122C7D93600330875 /* TitleWithCheckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,12 +512,13 @@
 		};
 		11F4357822C7319A00A48461 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3282F576FD939D20AF12557E /* Pods-QuickRestart.debug.xcconfig */;
+			baseConfigurationReference = 3A32DFD6FC35E8440D3C515D /* Pods-QuickRestart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z8242LF74;
 				INFOPLIST_FILE = QuickRestart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,12 +532,13 @@
 		};
 		11F4357922C7319A00A48461 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F41B7D1EA377D24122283436 /* Pods-QuickRestart.release.xcconfig */;
+			baseConfigurationReference = 93B958D60E90CD9F706A0FAE /* Pods-QuickRestart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z8242LF74;
 				INFOPLIST_FILE = QuickRestart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,7 +10,6 @@ import UIKit
 
 class DisasterTableViewCell: UITableViewCell {
 
-
     @IBOutlet weak var containerView: UIView! {
         didSet {
             containerView.layer.cornerRadius = 4
@@ -26,6 +25,12 @@ class DisasterTableViewCell: UITableViewCell {
             fadeView.layer.cornerRadius = 4
         }
     }
+
+    @IBOutlet weak var disasterTitleLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

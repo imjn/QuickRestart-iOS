@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
         <!--Disaster News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EearthQuakeListViewController" customModule="QuickRestart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DisasterListViewController" customModule="QuickRestart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,20 +42,66 @@
             </objects>
             <point key="canvasLocation" x="1490" y="946"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="I3S-P0-khS">
+        <!--Single Disaster View Controller-->
+        <scene sceneID="XJR-bg-7I4">
             <objects>
-                <viewController id="eiu-ZY-NyB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xy6-w6-xjs">
+                <viewController storyboardIdentifier="SingleDisaster" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2zf-M8-7GS" customClass="SingleDisasterViewController" customModule="QuickRestart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1wb-Lc-M5x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4e3-Vs-MQi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="797"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSE-Os-hpc">
+                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <color key="backgroundColor" name="Green"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBe-x0-xE4">
+                                <rect key="frame" x="0.0" y="797" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARD-4k-hdk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                        <state key="normal" title="SUPPORT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Green"/>
+                                <constraints>
+                                    <constraint firstItem="ARD-4k-hdk" firstAttribute="top" secondItem="yBe-x0-xE4" secondAttribute="top" id="80j-Cx-TLI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ARD-4k-hdk" secondAttribute="trailing" id="SMs-zb-Wab"/>
+                                    <constraint firstItem="ARD-4k-hdk" firstAttribute="leading" secondItem="yBe-x0-xE4" secondAttribute="leading" id="V7w-LT-wpG"/>
+                                    <constraint firstAttribute="bottom" secondItem="ARD-4k-hdk" secondAttribute="bottom" id="hvm-v7-hGg"/>
+                                    <constraint firstAttribute="height" constant="65" id="qiv-Un-0BW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="oyU-K4-rKt"/>
+                        <constraints>
+                            <constraint firstItem="yBe-x0-xE4" firstAttribute="bottom" secondItem="8Lz-qW-xIY" secondAttribute="bottom" id="5xD-eB-0RA"/>
+                            <constraint firstItem="QSE-Os-hpc" firstAttribute="top" secondItem="yBe-x0-xE4" secondAttribute="bottom" id="6bo-Yf-kxx"/>
+                            <constraint firstItem="4e3-Vs-MQi" firstAttribute="trailing" secondItem="8Lz-qW-xIY" secondAttribute="trailing" id="I7a-h9-xC2"/>
+                            <constraint firstItem="QSE-Os-hpc" firstAttribute="leading" secondItem="1wb-Lc-M5x" secondAttribute="leading" id="Pat-FR-Ot4"/>
+                            <constraint firstAttribute="trailing" secondItem="QSE-Os-hpc" secondAttribute="trailing" id="TWP-IS-f0V"/>
+                            <constraint firstItem="yBe-x0-xE4" firstAttribute="trailing" secondItem="8Lz-qW-xIY" secondAttribute="trailing" id="XSi-Ig-hj5"/>
+                            <constraint firstItem="yBe-x0-xE4" firstAttribute="top" secondItem="4e3-Vs-MQi" secondAttribute="bottom" id="hXD-jd-h9x"/>
+                            <constraint firstItem="4e3-Vs-MQi" firstAttribute="top" secondItem="1wb-Lc-M5x" secondAttribute="top" id="ojN-ef-0Gm"/>
+                            <constraint firstAttribute="bottom" secondItem="QSE-Os-hpc" secondAttribute="bottom" id="ud8-lE-eGQ"/>
+                            <constraint firstItem="4e3-Vs-MQi" firstAttribute="leading" secondItem="8Lz-qW-xIY" secondAttribute="leading" id="xRq-7Q-pFS"/>
+                            <constraint firstItem="yBe-x0-xE4" firstAttribute="leading" secondItem="8Lz-qW-xIY" secondAttribute="leading" id="xuN-iy-AyB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Lz-qW-xIY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="4e3-Vs-MQi" id="82A-uz-rqb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FG1-tq-j20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsI-Tj-JcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322" y="946"/>
+            <point key="canvasLocation" x="2307.2463768115945" y="945.53571428571422"/>
         </scene>
         <!--Certificates-->
         <scene sceneID="O35-20-jTX">
@@ -169,5 +216,8 @@
     <resources>
         <image name="pulse" width="30" height="30"/>
         <image name="signature" width="30" height="30"/>
+        <namedColor name="Green">
+            <color red="0.29803921568627451" green="0.62352941176470589" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

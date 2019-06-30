@@ -54,7 +54,7 @@ extension AppDelegate {
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         } else {
-            let initialViewController = UIStoryboard.initialViewController(for: .SignIn)
+            let initialViewController = UIStoryboard.initialViewController(for: .Main)
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }
