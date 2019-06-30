@@ -1,5 +1,5 @@
 //
-//  LocationService.swift
+//  SignInService.swift
 //  QuickRestart
 //
 //  Created by Imagine Kawabe on 2019/06/30.
@@ -7,22 +7,27 @@
 //
 
 import Foundation
-import CoreLocation
 import Alamofire
 
-class LocationService {
-    static func sendLocation(location: CLLocation, completion: @escaping (Bool) -> Void) {
+class SignInService {
+    func signIn(username: String, completion: @escaping (Bool) -> Void) {
+        let apiToContact = "https://fvw084zh70.execute-api.ap-northeast-1.amazonaws.com/default/registerUser"
+        let address = "0xa43e00a4d376d14117e7c97bfb57b54409f9b2b4"
         let parameters: [String: Any] = [
-            "username" : UserDefaults.standard.string(forKey: "username")!, // TODO
-            "latitude" : location.coordinate.latitude,
-            "longitude" : location.coordinate.longitude
+            "username" : username,
+            "eth_address" : address,
+            "ada_address" : "Ae2tdPwUPEZ25qr3SQLbKc8obr5cpzkKG6427TPGGjknT4J3YJrnn8RwwtD"
         ]
-        Alamofire.request("https://hssoiltszg.execute-api.ap-northeast-1.amazonaws.com/default/registerLocation", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+
+        UserDefaults.standard.set(username, forKey: "username")
+        UserDefaults.standard.set(address, forKey: "eth_address")
+
+        Alamofire.request(apiToContact, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { response in
                 if let err = response.error {
                     print(err.localizedDescription)
                     completion(false)
-                } else { 
+                } else {
                     guard let data = response.data else { completion(false); return }
                     let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
                     if let message = json["result"] as? String, message == "success" {
@@ -32,5 +37,6 @@ class LocationService {
                     }
                 }
         }
+
     }
 }

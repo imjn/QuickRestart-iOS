@@ -8,11 +8,11 @@
 
 import UIKit
 import MapKit
+import Lottie
 
 class SingleDisasterViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-
     var disaster: Disaster!
 
     override func viewDidLoad() {
@@ -22,6 +22,19 @@ class SingleDisasterViewController: UIViewController {
         tableView.register(UINib(nibName: "SingleDisasterTopTableViewCell", bundle: nil), forCellReuseIdentifier: "SingleDisasterTopCell")
     }
 
+    @IBAction func supportButtonTapped(_ sender: Any) {
+        let animationView = AnimationView()
+        animationView.frame = CGRect(x: 0, y: 0, width: 700, height: 700)
+        animationView.layer.masksToBounds = true
+        animationView.center = CGPoint(x: (UIWindow().frame.size.width) / 2, y: (UIWindow().frame.size.height) / 2 - 150)
+        animationView.contentMode = .scaleAspectFit
+        animationView.animation = Animation.named("reaction")
+        animationView.loopMode = .playOnce
+        animationView.animationSpeed = 1.5
+        animationView.play()
+        view.addSubview(animationView)
+        view.bringSubviewToFront(animationView)
+    }
 }
 
 extension SingleDisasterViewController: UITableViewDelegate, UITableViewDataSource {

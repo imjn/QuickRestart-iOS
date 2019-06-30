@@ -22,6 +22,8 @@
 		110E7E5C22C8468700330875 /* SingleDisasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5B22C8468700330875 /* SingleDisasterViewController.swift */; };
 		110E7E5F22C847C000330875 /* SingleDisasterTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E5D22C847C000330875 /* SingleDisasterTopTableViewCell.swift */; };
 		110E7E6022C847C000330875 /* SingleDisasterTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110E7E5E22C847C000330875 /* SingleDisasterTopTableViewCell.xib */; };
+		110E7E6222C8605E00330875 /* reaction.json in Resources */ = {isa = PBXBuildFile; fileRef = 110E7E6122C8605E00330875 /* reaction.json */; };
+		110E7E6422C8645A00330875 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7E6322C8645A00330875 /* SignInService.swift */; };
 		11F4356922C7319A00A48461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356822C7319A00A48461 /* AppDelegate.swift */; };
 		11F4356B22C7319A00A48461 /* DisasterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4356A22C7319A00A48461 /* DisasterListViewController.swift */; };
 		11F4356E22C7319A00A48461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F4356C22C7319A00A48461 /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		110E7E5B22C8468700330875 /* SingleDisasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDisasterViewController.swift; sourceTree = "<group>"; };
 		110E7E5D22C847C000330875 /* SingleDisasterTopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDisasterTopTableViewCell.swift; sourceTree = "<group>"; };
 		110E7E5E22C847C000330875 /* SingleDisasterTopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleDisasterTopTableViewCell.xib; sourceTree = "<group>"; };
+		110E7E6122C8605E00330875 /* reaction.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reaction.json; sourceTree = "<group>"; };
+		110E7E6322C8645A00330875 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		11F4356522C7319A00A48461 /* QuickRestart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickRestart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F4356822C7319A00A48461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F4356A22C7319A00A48461 /* DisasterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterListViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				11F4357F22C73BAD00A48461 /* DisasterService.swift */,
 				110E7E2D22C7C13500330875 /* CertificateService.swift */,
 				110E7E4A22C816F500330875 /* LocationService.swift */,
+				110E7E6322C8645A00330875 /* SignInService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				110E7E5622C83BF900330875 /* Extensions */,
+				110E7E6122C8605E00330875 /* reaction.json */,
 				11F4357A22C7368000A48461 /* heal.json */,
 				11F4356822C7319A00A48461 /* AppDelegate.swift */,
 				11F4356C22C7319A00A48461 /* Main.storyboard */,
@@ -290,6 +296,7 @@
 				11F4357322C7319A00A48461 /* LaunchScreen.storyboard in Resources */,
 				110E7E4F22C81D2700330875 /* Disaster.json in Resources */,
 				11F4358822C75ACB00A48461 /* CertificateTableViewCell.xib in Resources */,
+				110E7E6222C8605E00330875 /* reaction.json in Resources */,
 				11F4358422C741E500A48461 /* DisasterTableViewCell.xib in Resources */,
 				110E7E6022C847C000330875 /* SingleDisasterTopTableViewCell.xib in Resources */,
 				110E7E2C22C7BF1E00330875 /* Certificate.json in Resources */,
@@ -355,6 +362,7 @@
 				110E7E4B22C816F500330875 /* LocationService.swift in Sources */,
 				11F4358022C73BAD00A48461 /* DisasterService.swift in Sources */,
 				11F4358A22C7608B00A48461 /* CertificateListViewController.swift in Sources */,
+				110E7E6422C8645A00330875 /* SignInService.swift in Sources */,
 				11F4356B22C7319A00A48461 /* DisasterListViewController.swift in Sources */,
 				110E7E2922C7B4FE00330875 /* Certificate.swift in Sources */,
 				110E7E3322C7E09800330875 /* StackTextView.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 import CKMnemonic
+import IQKeyboardManagerSwift
 
 class SignInViewController: UIViewController {
 
@@ -16,19 +17,16 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        IQKeyboardManager.shared.enable = true
     }
 
     @IBAction func startButtonTapped(_ sender: Any) {
 
-        do {
-            let language: CKMnemonicLanguageType = .english
-            let mnemonic = try CKMnemonic.generateMnemonic(strength: 128, language: language)
-            print(mnemonic)
-            let seed = try CKMnemonic.deterministicSeedString(from: mnemonic, passphrase: "Test", language: language)
-            print(seed)
-        } catch {
-            print(error)
+        guard let text = textField.text else { return }
+        SignInService().signIn(username: text) { success in
+            if success {
+                UIStoryboard.moveToAnotherStoryboard(for: .Main, currentView: self)
+            }
         }
 
     }

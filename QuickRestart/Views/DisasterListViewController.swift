@@ -40,7 +40,6 @@ class DisasterListViewController: UIViewController {
             locationManager.startUpdatingLocation()
         }
     }
-
 }
 
 extension DisasterListViewController: CLLocationManagerDelegate {

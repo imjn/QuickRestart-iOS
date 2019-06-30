@@ -9,7 +9,8 @@ def install_pods
     pod 'IQKeyboardManagerSwift'
     pod 'RealmSwift'
     pod 'AlamofireImage'
-    pod "CKMnemonic"
+    pod 'GoldenKeystore'
+    pod 'TrezorCrypto', '=0.0.6'
     
     # Rx
     pod 'ReactorKit'

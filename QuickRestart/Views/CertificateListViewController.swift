@@ -23,7 +23,7 @@ class CertificateListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        CertificateService().fetchCertificates { cers in
+        CertificateService().fetchCertificatesFromDb { cers in
             self.certificates = cers
         }
 
